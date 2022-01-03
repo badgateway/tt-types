@@ -1,0 +1,33 @@
+{
+  "$id": "https://tt.badgateway.net/schema/entry-new.json",
+  "type": "object",
+  "title": "entry-new",
+  "additionalProperties": false,
+  "properties": {
+    "description": {
+      "type": "string",
+      "description": "A short description of the work done"
+    },
+    "minutes": {
+      "type": "integer",
+      "description": "Time spent on the project, expressed as minutes",
+      "exclusiveMinimum": 1
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "billable": {
+      "type": "boolean"
+    },
+
+    "_links": {}
+  },
+  "required": [
+    "description",
+    "minutes",
+    "date",
+    "billable"
+  ],
+  "writeOnly": true
+}

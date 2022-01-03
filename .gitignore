@@ -1,0 +1,14 @@
+# npm
+/node_modules
+
+# typescript output
+/dist
+
+# json2ts output
+/src/*.d.ts
+
+# vim
+.*.swp
+
+# nyc
+/.nyc_output
