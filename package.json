@@ -1,10 +1,17 @@
 {
   "name": "@evert/tt-types",
-  "version": "0.0.1",
+  "version": "0.5.0",
   "description": "Types and schemas for the time tracking application",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "tsc",
+    "build": "json2ts -i schema/ -o src/; cp src/*.d.ts dist/; tsc",
+    "start": "node dist/index.js",
+    "start:watch": "npx tsc-watch --onSuccess 'node dist/index.js'",
+    "watch": "tsc --watch",
+    "lint": "eslint --quiet 'src/*.ts'",
+    "fix": "eslint --quiet 'src/**/*.ts' --fix"
   },
   "repository": {
     "type": "git",
@@ -18,9 +25,24 @@
     "json-schema"
   ],
   "author": "Evert Pot",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/evert/tt-types/issues"
   },
-  "homepage": "https://github.com/evert/tt-types#readme"
+  "files": [
+    "schema/",
+    "dist/",
+    "src/"
+  ],
+  "homepage": "https://github.com/evert/tt-types#readme",
+  "devDependencies": {
+    "@types/node": "^16.11.17",
+    "@typescript-eslint/eslint-plugin": "^5.8.1",
+    "@typescript-eslint/parser": "^5.8.1",
+    "eslint": "^8.6.0",
+    "json-schema-to-typescript": "^10.1.5",
+    "ts-node": "^10.4.0",
+    "tsc-watch": "^4.6.0",
+    "typescript": "^4.5.4"
+  }
 }

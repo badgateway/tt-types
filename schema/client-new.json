@@ -1,0 +1,18 @@
+{
+    "$id": "https://tt.badgateway.net/schema/client-new.json",
+    "type": "object",
+    "title": "client-new",
+    "description": "A client",
+    "additionalProperties": false,
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "Name of the client/company"
+        },
+        "_links": {}
+    },
+    "required": [
+        "name"
+    ],
+    "writeOnly": true
+}

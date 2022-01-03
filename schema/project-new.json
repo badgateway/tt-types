@@ -1,0 +1,18 @@
+{
+  "$id": "https://tt.badgateway.net/schema/project-new.json",
+  "type": "object",
+  "title": "project-new",
+  "description": "A project",
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of the project"
+    },
+    "_links": {}
+  },
+  "required": [
+    "name"
+  ],
+  "writeOnly": true
+}
