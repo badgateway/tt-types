@@ -6,7 +6,7 @@
   "scripts": {
     "test": "npx tsc --noEmit",
     "prepublishOnly": "npm run build",
-    "build": "json2ts -i schema/ -o src/; cp src/*.d.ts dist/; tsc",
+    "build": "json2ts -i schema/ -o src/; mkdir -p dist/; cp src/*.d.ts dist/; tsc",
     "start": "node dist/index.js",
     "start:watch": "npx tsc-watch --onSuccess 'node dist/index.js'",
     "watch": "tsc --watch",
