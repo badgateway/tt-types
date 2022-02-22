@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/evert/tt-types.git"
+    "url": "git+https://github.com/badgateway/tt-types.git"
   },
   "keywords": [
     "time",
@@ -27,14 +27,14 @@
   "author": "Evert Pot",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/evert/tt-types/issues"
+    "url": "https://github.com/badgateway/tt-types/issues"
   },
   "files": [
     "schema/",
     "dist/",
     "src/"
   ],
-  "homepage": "https://github.com/evert/tt-types#readme",
+  "homepage": "https://github.com/badgateway/tt-types#readme",
   "devDependencies": {
     "@types/node": "^16.11.17",
     "@typescript-eslint/eslint-plugin": "^5.8.1",
