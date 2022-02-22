@@ -1,0 +1,30 @@
+{
+  "$id": "https://tt.badgateway.net/schema/client.json",
+  "type": "object",
+  "title": "client",
+  "description": "A client",
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+        "type": "string",
+        "description": "Name of the client/company"
+    },
+    "modifiedAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Last modification date"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Creation date"
+    },
+    "_links": {}
+  },
+  "required": [
+    "name",
+    "modifiedAt",
+    "createdAt"
+  ],
+  "writeOnly": true
+}
