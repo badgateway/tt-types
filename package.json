@@ -4,7 +4,7 @@
   "description": "Types and schemas for the time tracking application",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npx tsc --noEmit",
     "prepublishOnly": "tsc",
     "build": "json2ts -i schema/ -o src/; cp src/*.d.ts dist/; tsc",
     "start": "node dist/index.js",
