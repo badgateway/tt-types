@@ -1,0 +1,29 @@
+{
+  "$id": "https://tt.badgateway.net/schema/project.json",
+  "type": "object",
+  "title": "project",
+  "description": "A Project",
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of the project"
+    },
+    "modifiedAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Last modification date"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Creation date"
+    },
+    "_links": {}
+  },
+  "required": [
+    "name",
+    "createdAt",
+    "modifiedAt"
+  ]
+}
