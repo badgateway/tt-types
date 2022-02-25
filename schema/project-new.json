@@ -2,7 +2,7 @@
   "$id": "https://tt.badgateway.net/schema/project-new.json",
   "type": "object",
   "title": "project-new",
-  "description": "A project",
+  "description": "This is the body of a new Project",
   "additionalProperties": false,
   "properties": {
     "name": {
