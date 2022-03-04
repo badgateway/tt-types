@@ -1,0 +1,29 @@
+{
+  "$id": "https://tt.badgateway.net/schema/person.json",
+  "type": "object",
+  "title": "person",
+  "description": "A person is someone who works on projects",
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of the person"
+    },
+    "modifiedAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Last modification date"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Creation date"
+    },
+    "_links": {}
+  },
+  "required": [
+    "name",
+    "modifiedAt",
+    "createdAt"
+  ]
+}
