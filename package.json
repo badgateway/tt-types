@@ -1,6 +1,6 @@
 {
   "name": "@badgateway/tt-types",
-  "version": "0.10.1",
+  "version": "0.10.2",
   "description": "Types and schemas for the time tracking application",
   "main": "dist/index.js",
   "scripts": {
