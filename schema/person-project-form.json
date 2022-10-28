@@ -16,7 +16,8 @@
       },
       "href": {
         "type": "string",
-        "description": "The user's unique mailto: address (eg. mailto:jd@badgateway.net)."
+        "description": "The user's unique mailto: address (eg. mailto:jd@badgateway.net).",
+        "format": "uri"
       },
       "_links": {}
     },
