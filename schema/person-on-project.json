@@ -1,0 +1,28 @@
+{
+    "$id": "https://tt.badgateway.net/schema/person-project.json",
+    "type": "object",
+    "title": "person-on-project",
+    "description": "A person on a project requires certain properties to be processed.",
+    "additionalProperties": false,
+    "properties": {
+      "name": {
+        "type": "string",
+        "description": "Name of the person."
+      },
+      "role": {
+        "type": "string",
+        "description": "The role the Person will have with respect to the Project."
+      },
+      "href": {
+        "type": "string",
+        "description": "The person's unique mailto: address (eg. mailto:jd@badgateway.net)."
+      },
+      "_links": {}
+    },
+    "required": [
+      "name",
+      "role",
+      "href"
+    ]
+  }
+  
