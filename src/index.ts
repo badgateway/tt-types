@@ -10,4 +10,4 @@ export { PersonNew } from './person-new';
 export { Project } from './project';
 export { ProjectNew } from './project-new';
 
-export { PersonOnProject } from './person-on-project';
+export { PersonProjectForm } from './person-project-form';
