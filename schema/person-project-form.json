@@ -1,0 +1,29 @@
+{
+    "$id": "https://tt.badgateway.net/schema/person-project-form.json",
+    "type": "object",
+    "title": "person-project-form",
+    "description": "This is the request body used by the HTML form submission for adding a user to a Project.",
+    "additionalProperties": false,
+    "properties": {
+      "name": {
+        "type": "string",
+        "description": "Name of the user."
+      },
+      "role": {
+        "type": "string",
+        "description": "The role the user will have with respect to the Project.",
+        "enum": ["owner", "member", "manager"]
+      },
+      "href": {
+        "type": "string",
+        "description": "The user's unique mailto: address (eg. mailto:jd@badgateway.net)."
+      },
+      "_links": {}
+    },
+    "required": [
+      "name",
+      "role",
+      "href"
+    ]
+  }
+  
